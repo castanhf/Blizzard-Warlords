@@ -111,7 +111,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 0ae93ecb49c7ebd4cb4c7d161692ed56, type: 2}
 --- !u!4 &408730 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 408730, guid: 81f6dafe5295de54d9d956560641b792,
@@ -1145,6 +1145,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19d01ed70731c5745b32a1ab4a1771da, type: 3}
+--- !u!1 &635766536 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100008, guid: 19d01ed70731c5745b32a1ab4a1771da,
+    type: 3}
+  m_PrefabInstance: {fileID: 633101192}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &635766538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635766536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b421f52d5ac94057b2c2a0437d01809, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xRotationsPerMinute: 0
+  yRotationsPerMinute: 0
+  zRotationsPerMinute: 5
 --- !u!1001 &685120896
 PrefabInstance:
   m_ObjectHideFlags: 0

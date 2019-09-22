@@ -5,17 +5,71 @@ ModelImporter:
   fileIDToRecycleName:
     100000: //RootNode
     100002: WindMill
+    100004: Wind_Mill_Blades
+    100006: Wind_Mill_Building
+    100008: Wind Mill Blades
+    100010: Wind Mill Building
     400000: //RootNode
     400002: WindMill
+    400004: Wind_Mill_Blades
+    400006: Wind_Mill_Building
+    400008: Wind Mill Blades
+    400010: Wind Mill Building
     2300000: //RootNode
     2300002: WindMill
+    2300004: Wind_Mill_Blades
+    2300006: Wind_Mill_Building
+    2300008: Wind Mill Blades
+    2300010: Wind Mill Building
     3300000: //RootNode
     3300002: WindMill
+    3300004: Wind_Mill_Blades
+    3300006: Wind_Mill_Building
+    3300008: Wind Mill Blades
+    3300010: Wind Mill Building
     4300000: WindMill
+    4300002: Wind_Mill_Blades
+    4300004: Wind_Mill_Building
+    4300006: Wind Mill Blades
+    4300008: Wind Mill Building
     7400000: Default Take
     9500000: //RootNode
-    2186277476908879412: ImportLogs
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WIndMill_Glass
+    second: {fileID: 2100000, guid: 5bc38062e8fdfc845b3f0d9f71e24c43, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WIndMill_Wood
+    second: {fileID: 2100000, guid: 1413015f307998d418fc7e8a2ae941cc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WindMill_Brick_Building
+    second: {fileID: 2100000, guid: e695982ad40df2a4da2b430acef205b8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WindMill_Bricks
+    second: {fileID: 2100000, guid: 101ade9e8404b57468e389cb4c0d0da5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WindMill_Darker_Wood
+    second: {fileID: 2100000, guid: be7495e120932044c8a7020f5e134fcd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WindMill_Roof
+    second: {fileID: 2100000, guid: b67b1cd45dd1f2d4b8ca2ef248b88f83, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WindMill_Sails
+    second: {fileID: 2100000, guid: 56afc40341551634cb5e5c0463dd9867, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -74,7 +128,7 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 0
-    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
   importAnimation: 1
