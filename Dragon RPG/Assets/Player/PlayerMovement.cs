@@ -23,24 +23,6 @@ public class PlayerMovement : MonoBehaviour
 
     // TODO: fix click movement and WASD conflict, which increases speed
 
-    // Fixed update is called in sync with physics
-    private void FixedUpdate()
-    {
-        // G for gamepad. TODO: allow player to change later
-        if (Input.GetKeyDown(KeyCode.G)) {
-            isInDirectMode = !isInDirectMode; // toggle mode
-            currentDestination = transform.position; // clear the click target
-        }
-
-        if(isInDirectMode) {
-            ProcessDirectMovement();
-        }
-        else {
-            ProcessMouseMovement();
-        }
-
-    }
-
     private void ProcessDirectMovement() {
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
@@ -52,25 +34,25 @@ public class PlayerMovement : MonoBehaviour
         thirdPersonCharacter.Move(movement, false, false);
     }
 
-    private void ProcessMouseMovement()
-    {
-        if (Input.GetMouseButton(0)) {                  // Get mouse input
-            clickPoint = cameraRaycaster.hit.point;     // Get click point
-            switch (cameraRaycaster.currentLayerHit)
-            {
-                case Layer.Walkable:
-                    currentDestination = ShortDestination(clickPoint, walkMoveStopRadius);  // Short destination
-                    break;
-                case Layer.Enemy:
-                    currentDestination = ShortDestination(clickPoint, attackMoveStopRadius);  // Short destination
-                    break;
-                default:
-                    print("DEFAULT - not good");
-                    return;
-            }
-        }
-        WalkToDestination();
-    }
+    //private void ProcessMouseMovement()
+    //{
+    //    if (Input.GetMouseButton(0)) {                  // Get mouse input
+    //        clickPoint = cameraRaycaster.hit.point;     // Get click point
+    //        switch (cameraRaycaster.currentLayerHit)
+    //        {
+    //            case Layer.Walkable:
+    //                currentDestination = ShortDestination(clickPoint, walkMoveStopRadius);  // Short destination
+    //                break;
+    //            case Layer.Enemy:
+    //                currentDestination = ShortDestination(clickPoint, attackMoveStopRadius);  // Short destination
+    //                break;
+    //            default:
+    //                print("DEFAULT - not good");
+    //                return;
+    //        }
+    //    }
+    //    WalkToDestination();
+    //}
 
     private void WalkToDestination()
     {
